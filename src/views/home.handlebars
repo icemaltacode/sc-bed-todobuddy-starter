@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-header">
+    Add a Todo
+  </div>
+  <div class="card-body">
+    <form id="todoForm">
+        <div class="row">
+            <div class="col-xs-4 col-md-10">
+                <input type="text" class="form-control form-control-lg" id="content" name="content" placeholder="Add your todo here" required>
+            </div>
+            <div class="col-xs-8 col-md-2">
+                <button type="submit" class="btn btn-primary btn-lg">Add</button>
+            </div>
+        </div>
+    </form>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    Todos
+  </div>
+  <div class="card-body">
+    <ul class="list-group">
+        {{!-- <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="checkbox-{{@index}}" {{#if this.completed}}checked{{/if}}>
+            <label class="form-check-label stretched-link {{#if this.completed}}completed{{/if}}" for="checkbox-{{@index}}">{{this.content}}</label>
+        </li> --}}
+    </ul>
+  </div>
+</div>
+{{#section 'scripts'}}
+<script>
+    
+</script>
+{{/section}}
